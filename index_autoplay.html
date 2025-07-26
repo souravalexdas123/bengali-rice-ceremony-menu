@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>শুভ অন্নপ্রাশন মেনু</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap');
+    body {
+      font-family: 'Noto Serif Bengali', serif;
+      background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-color: #FFF8F0;
+      margin: 0;
+      padding: 0;
+      color: #3A2D28;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #B71C1C;
+      font-size: 2rem;
+    }
+    h2 {
+      color: #D84315;
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+    .menu-item {
+      font-size: 1.2rem;
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>শুভ অন্নপ্রাশন মেনু</h1>
+    <h2>নাশতা:</h2>
+    <div class="menu-item">• লুচি</div>
+    <div class="menu-item">• আলুর দম</div>
+
+    <h2>ভোজন:</h2>
+    <div class="menu-item">• রাধাবল্লভী</div>
+    <div class="menu-item">• ছোলার ডাল</div>
+    <div class="menu-item">• ডিমের ডেভিল</div>
+    <div class="menu-item">• ফ্রাইড রাইস</div>
+    <div class="menu-item">• দই কাতলা</div>
+    <div class="menu-item">• মটন</div>
+    <div class="menu-item">• মিষ্টি</div>
+    <div class="menu-item">• মিষ্টি দই</div>
+
+    <audio id="bg-music" autoplay loop muted>
+      <source src="https://cdn.pixabay.com/download/audio/2023/05/25/audio_267c5be431.mp3?filename=bangla-instrumental-112261.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('bg-music');
+      setTimeout(() => { audio.muted = false; }, 1000);
+    });
+  </script>
+</body>
+</html>
